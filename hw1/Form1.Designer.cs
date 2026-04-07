@@ -22,10 +22,6 @@
 
         #region Windows Form 設計工具產生的程式碼
 
-        /// <summary>
-        /// 此為設計工具支援所需的方法 - 請勿使用程式碼編輯器修改
-        /// 這個方法的內容。
-        /// </summary>
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
@@ -38,8 +34,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
-            this.MinimizeBox = true;
-            this.AutoSize = false;
 
             // 主面板
             System.Windows.Forms.Panel mainPanel = new System.Windows.Forms.Panel();
@@ -55,7 +49,6 @@
             int titleHeight = 48;
             int currentY = margin;
 
-            // ==================== 標題區 ====================
             System.Windows.Forms.Label titleLabel = new System.Windows.Forms.Label();
             titleLabel.Text = "🏠 個人房貸試算器";
             titleLabel.Font = new System.Drawing.Font("微軟正黑體", 20F, System.Drawing.FontStyle.Bold);
@@ -133,8 +126,6 @@
             this.cmbDownPaymentType.Size = new System.Drawing.Size(inputWidth, controlHeight);
             this.cmbDownPaymentType.Items.AddRange(new string[] { "百分比 (%)", "金額 (元)" });
             this.cmbDownPaymentType.SelectedIndex = 0;
-            this.cmbDownPaymentType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbDownPaymentType.Font = new System.Drawing.Font("微軟正黑體", 12F);
             this.cmbDownPaymentType.SelectedIndexChanged += new System.EventHandler(this.CmbDownPaymentType_SelectedIndexChanged);
             inputGroup.Controls.Add(this.cmbDownPaymentType);
             groupY += spacing;
